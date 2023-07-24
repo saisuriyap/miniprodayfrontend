@@ -1,0 +1,122 @@
+.container {
+    display: flex;
+    justify-content: center;
+    height: 720px;
+  }
+  .day-name{
+    font-size: 35px;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    width: 300px;
+
+  }
+  .day-column li{
+    list-style-type: none;
+  }
+  .day-name input{
+  
+        width: 50px;
+        height: 25px;
+        border-radius: 20px;
+/*       
+      #myCheckbox + label {
+        font-size: 18px;
+        line-height: 20px;
+      } */
+  }
+ #timingSelect{
+    width: 80px;
+        height: 40px;
+        margin-right: 20px;
+        margin-left: 20px;
+        border-radius: 10px;
+  }
+/* .h1{
+  color: white;
+} */
+
+ 
+  .footer {
+
+    color: #ffffff;
+    
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 5%;
+    /* padding: 0 20px; */
+    background-color: #eff1f4;
+  color: rgb(9, 9, 9);
+  }
+  
+  .footer-content {
+
+        display: flex;
+        margin-top: 100px;
+        padding-top: 100px;
+        flex: 1;
+        margin-left: 0;
+        padding-left: 100px;
+        justify-content: space-between;
+        gap: 300px; /* Add gap between sections */
+        background-color: rgb(93, 93, 93);
+      
+      
+  }
+  .calen{
+    background-color: black;
+    padding-bottom: 2%;
+    padding-top: 5%;
+  }
+  .footer-section {
+    flex: 1;
+  }
+  
+  .footer-heading {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .footer-social-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .footer-social-links li {
+    margin-right: 10px;
+  }
+  
+  .footer-social-links a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+  }
+  .xyz{
+    font-size: large;
+    color: black;
+  }

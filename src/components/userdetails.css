@@ -1,0 +1,28 @@
+.entire-register-div{
+    background-color: black;
+    color: cornsilk;
+    padding-bottom: 23%;
+    padding-left: 600px;
+    padding-top: 200px;
+    
+}
+.input-div{
+    width: 600px;
+}
+
+.btn
+{
+   justify-content: center;
+   padding-right: 100%;
+   padding-top: 5%;
+   /* text-align: center;
+   justify-content: center; */
+   font-size: large;
+
+}
+.userinfo-name-div{
+    justify-content: center;
+    /* padding-bottom: 50%; */
+    padding-right: 50%;
+
+}
