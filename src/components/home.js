@@ -16,7 +16,7 @@ export default function Home(){
             <div className="home-content">
                 <div className="home-intro-content">
                 "  Link Up For When It's Quitting Time."
-                    <div><Link to="/cal" className="continue-btn-home" >Let 's start</Link></div>
+                    <div><Link to="/service" className="continue-btn-home" >Let 's start</Link></div>
                 </div>
                 <div className="home-side-image"><div>
                 <img className="main-img-home" src={homepic} />

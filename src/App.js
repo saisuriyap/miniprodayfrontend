@@ -6,6 +6,8 @@ import AboutUs from "./components/about";
 import Scheduletimes from "./components/calender";
 import ContactUs from "./components/contact";
 import Userinfo from "./components/userdetails";
+import ServiceMenu from "./components/service";
+import FeedbackPage from "./components/feedback";
 function App() {
   return (
     <div className="App">
@@ -17,6 +19,8 @@ function App() {
         <Route path="/cal" element={<Scheduletimes/>}/>
         <Route path="/contact" element={<ContactUs/>}/>
         <Route path="/userdetails" element={<Userinfo/>}/>
+        <Route path="/service" element={<ServiceMenu/>}/>
+        <Route path="/feedback" element={<FeedbackPage/>}/>
       </Routes>
     </div>
   );

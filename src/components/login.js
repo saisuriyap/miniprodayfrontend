@@ -5,6 +5,8 @@ import { useDispatch } from 'react-redux';
 import { login } from './Redux/usersslice';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+
+
 const LoginPage = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -14,12 +16,9 @@ const LoginPage = () => {
   const handleSubmit = (e) => {
 
     e.preventDefault();
-    window.alert('Login successfully!');
-    // Add your authentication logic here
-    // For simplicity, let's just log the email and password
+    
     console.log('Email:', email);
     console.log('Password:', password);
-    try{
       axios.post("http://localhost:8181/api/v1/auth/authenticate",{
         
           "email":email,
@@ -30,14 +29,14 @@ const LoginPage = () => {
           localStorage.setItem("token",res.data.token);
           // updateValue(username);
           navigate("/home");
+          window.alert('Login successfully!');
           console.log("success")
       })
-  }
-  catch(error){
+  .catch(error=>{
       console.error("Error: " ,error);
-    }
+      window.alert('OOPs!Login Unsuccess');
+    });
   };
-
   return (
     <div className='box'>
         <div className='login-content'>
@@ -62,7 +61,7 @@ const LoginPage = () => {
           />
          
         </div>
-        <button type="submit" class='bt' ><Link to="/home" className='logbut'>Login</Link></button>
+        <button type="submit" class='bt' >Login</button>
       </form>
         <div className="reg">
             <Link to="/register"><p className="reg1">

@@ -27,14 +27,15 @@ export default function Navbar(){
             </a>
             <ul className="navul">
                 <li className="nav-items">
-                    <a href="/home">HOME</a>
+                  <Link to='/feedback'>
+                    <a>FEEDBACK</a>
+                  </Link>
                 </li>
                 <li>
                   <Link to='/about'>
-
                     <a>ABOUT US</a>
                   </Link>
-                </li>
+                </li>   
                 <li>
                   <Link to='/contact'>
                     <a>HELP </a>
